@@ -1163,7 +1163,7 @@
       
       // test for jsonp
       if (jsonp || /\=\?|callback\=/.test(url)) {
-        if (/\=\?/.test(url)) url = url.replace(/[&?]{1,2}/, '?');
+        if (!/\=\?/.test(url)) url = (url + '&callback=?').replace(/[&?]{1,2}/, '?');
         ajaxJSONP(url, options);
         return this;
       }
