@@ -1,0 +1,17 @@
+{
+  "name": "code.tirejs.com",
+  "version": "0.1.0",
+  "author": "Fredrik Forsmo <fredrik.forsmo@gmail.com>",
+  "description": "",
+  "homepage": "http://code.tirejs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tirejs/code.tirejs.com.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-sizediff": "~0.3.1"
+  },
+  "license": "MIT"
+}
