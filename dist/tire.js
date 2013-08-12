@@ -4,7 +4,7 @@
  * Version: 1.2.0
  * Released under the MIT License.
  *
- * Date: 2013-05-24
+ * Date: 2013-08-12
  */
 (function (window, undefined) {
 
@@ -1371,7 +1371,7 @@
       }
       for (var name in eventMethods) {
         proxy[name] = function () {
-          this[eventMethods[name]] = returnTrue;
+          this[eventMethods[name]] = returnTrue;
           return event[name].apply(event, arguments);
         };
         proxy[eventMethods[name]] = returnFalse;
